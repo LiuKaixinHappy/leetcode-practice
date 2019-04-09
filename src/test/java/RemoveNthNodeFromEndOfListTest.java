@@ -37,7 +37,7 @@ public class RemoveNthNodeFromEndOfListTest {
     }
 
     @Test
-    public void should_remove_the_2th_node_from_the_end_when_n_is_2_2() {
+    public void should_remove_head_node_from_the_end_when_list_length_and_n_are_both_2() {
         // Given
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
