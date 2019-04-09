@@ -47,11 +47,11 @@ Explanation: 342 + 465 = 807.
 #### 实现
 
 ```java
-public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode result = new ListNode(0);
-        ListNode l1P = l1;
-        ListNode l2P = l2;
-        ListNode resultP = result;
+public base.ListNode addTwoNumbers(base.ListNode l1, base.ListNode l2) {
+        base.ListNode result = new base.ListNode(0);
+        base.ListNode l1P = l1;
+        base.ListNode l2P = l2;
+        base.ListNode resultP = result;
         int carry = 0;
         int l1Val, l2Val;
         while (true) {
@@ -62,7 +62,7 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             l2Val = l2P == null ? 0 : l2P.val;
             int sum = l1Val + l2Val + carry;
             int units = sum % 10;
-            resultP.next = new ListNode(units);
+            resultP.next = new base.ListNode(units);
             carry = sum / 10;
             if (l1P != null) {
                 l1P = l1P.next;
@@ -73,7 +73,7 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             resultP = resultP.next;
         }
         if (carry > 0) {
-            resultP.next = new ListNode(carry);
+            resultP.next = new base.ListNode(carry);
         }
         return result.next;
     }
@@ -81,4 +81,4 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 #### 总结（接上一个练习）
 
-3. 考虑各种情况，也就是TDD中的先思考测试用例，从最简单的一个下手，可能没有时间去重构，因此需要纵观测试用例，直接考虑普适情况。
+1. 考虑各种情况，也就是TDD中的先思考测试用例，从最简单的一个下手，可能没有时间去重构，因此需要纵观测试用例，直接考虑普适情况。

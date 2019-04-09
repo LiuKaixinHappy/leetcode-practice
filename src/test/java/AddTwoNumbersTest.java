@@ -1,5 +1,5 @@
 import addtwonumbers.AddTwoNumbers;
-import addtwonumbers.ListNode;
+import base.ListNode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
