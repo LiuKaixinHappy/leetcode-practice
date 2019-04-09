@@ -3,6 +3,7 @@ import org.junit.Test;
 import removeNthNode.RemoveNthNodeFromEndOfList;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class RemoveNthNodeFromEndOfListTest {
     @Test
@@ -33,7 +34,7 @@ public class RemoveNthNodeFromEndOfListTest {
         RemoveNthNodeFromEndOfList rm = new RemoveNthNodeFromEndOfList();
         ListNode result = rm.removeNthFromEnd(head, 1);
         // Then
-        assertEquals(null, result);
+        assertNull(result);
     }
 
     @Test
