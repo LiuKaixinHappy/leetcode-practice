@@ -9,7 +9,7 @@ public class ReverseLinkedList {
         }
         ListNode preP = null;
         ListNode curP = head;
-        ListNode nxtP = head;
+        ListNode nxtP;
         while(curP != null) {
             nxtP = curP.next;
             curP.next = preP;
@@ -18,4 +18,18 @@ public class ReverseLinkedList {
         }
         return preP;
     }
+
+    public ListNode reverseListRecursively(ListNode head) {
+        return reverse(head, null);
+    }
+
+    private ListNode reverse(ListNode head, ListNode newHead) {
+        if (head == null) {
+            return newHead;
+        }
+        ListNode next = head.next;
+        head.next = newHead;
+        return reverse(next, head);
+    }
+
 }

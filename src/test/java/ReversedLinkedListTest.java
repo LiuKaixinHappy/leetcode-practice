@@ -11,7 +11,7 @@ public class ReversedLinkedListTest {
         // Given
         ReverseLinkedList reverse = new ReverseLinkedList();
         // When
-        ListNode result = reverse.reverseList(null);
+        ListNode result = reverse.reverseListRecursively(null);
         // Then
         assertNull(result);
     }
@@ -21,7 +21,7 @@ public class ReversedLinkedListTest {
         // Given
         ReverseLinkedList reverse = new ReverseLinkedList();
         // When
-        ListNode result = reverse.reverseList(new ListNode(1));
+        ListNode result = reverse.reverseListRecursively(new ListNode(1));
         // Then
         assertEquals(1, result.val);
         assertNull(result.next);
@@ -34,7 +34,7 @@ public class ReversedLinkedListTest {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         // When
-        ListNode result = reverse.reverseList(head);
+        ListNode result = reverse.reverseListRecursively(head);
         // Then
         assertEquals(2, result.val);
         assertEquals(1, result.next.val);
