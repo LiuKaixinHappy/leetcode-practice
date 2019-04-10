@@ -4,53 +4,61 @@
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 20min | 分析+实现+总结+测试 |
-2. [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+1. [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
    
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 20min | 分析+实现+总结+测试 |
    
-3. [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+1. [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
    
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 40min | 分析+实现(7min)+总结+测试 |
    
-4. [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+1. [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
 
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 40min | 分析+实现+总结+测试 |
    
-5. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+1. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 40min | 分析+实现+总结+测试 |
    
-6. [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+1. [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 20min | 分析+实现+总结+测试 |
 
-7. [155. Min Stack](https://leetcode.com/problems/min-stack/)
+1. [155. Min Stack](https://leetcode.com/problems/min-stack/)
 
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 32min | 分析+实现+总结+测试 |
 
-8. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 38min | 分析+实现+总结+测试 |
 
-9. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
+1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
 
    | 次数 | 时间 | 内容 |
    | ------ | ------ | ------ |
    | 1 | 33min | 分析+实现+总结+测试 |
+   
+1. [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+
+   | 次数 | 时间 | 内容 |
+   | ------ | ------ | ------ |
+   | 1 | 60min | 分析+实现+总结+测试 |
+   | 2 | 20min | 实现 |
+   | 3 | 7min  | 实现 |
 
 总结:
 1. 先想解决思路，不必考虑复杂度，也不必考虑数据结构；再看每一步是否有可优化的点，从数据结构与算法的角度考虑。
@@ -64,3 +72,4 @@
 1. 涉及多个指针的，先在纸上画，画完再写程序。
 1. 涉及多个指针的，要注意元素个数对其的影响。
 1. 有数据搬运操作时，注意分析不同搬运时刻所需的代价。
+1. 特别注意空指针问题。
