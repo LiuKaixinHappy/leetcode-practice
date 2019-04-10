@@ -21,7 +21,7 @@
 
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
-   | 1 | 40min | 分析+实现+总结+测试 |2019.04.09|
+   | 1 | 16min | 分析+实现+总结+测试 |2019.04.09|
    
 1. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
