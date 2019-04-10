@@ -1,22 +1,22 @@
 # 844. Backspace String Compare
 
-#### 要求
+## 要求
 
 对比两字符串是否相等。`#`代表退格键。
 
 备注：
 使用时间复杂度O(n)，空间复杂度O(1)。
 
-#### 分析
+## 分析
 从后向前遍历对比两字符串，如果遇到`#`，则skip掉下一个非井号的字符。
 
-#### 特殊情况及边界（测试用例）
+## 特殊情况及边界（测试用例）
 - 两个空串
 - 一个空串，一个不空
 - 相等字串
 - 不想等字串
 
-#### 实现
+## 实现
 
 ```java
 public boolean backspaceCompare(String S, String T) {
@@ -61,6 +61,6 @@ public boolean backspaceCompare(String S, String T) {
 }
 ```
 
-#### 总结
+## 总结
 
 1. 最终字符串取决于后面字符时，考虑倒序遍历。
