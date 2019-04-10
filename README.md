@@ -1,23 +1,31 @@
 已完成:
 1. [1. Two Sum](https://leetcode.com/problems/two-sum/)
    
+   [Click here to see analysis](src/main/java/twosum/analysis.md)
+   
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
    | 1 | 20min | 分析+实现+总结+测试 |2019.04.09|
    
 1. [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
    
+   [Click here to see analysis](src/main/java/addtwonumbers/analysis.md)
+
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
    | 1 | 20min | 分析+实现+总结+测试 |2019.04.09|
    
 1. [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
    
+   [Click here to see analysis](src/main/java/removeNthNode/analysis.md)
+
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
    | 1 | 40min | 分析+实现(7min)+总结+测试 | 2019.04.09|
    
 1. [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
+   [Click here to see analysis](src/main/java/validparentheses/analysis.md)
 
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
@@ -25,11 +33,15 @@
    
 1. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 
+   [Click here to see analysis](src/main/java/mergetwosortedlist/analysis.md)
+
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
    | 1 | 40min | 分析+实现+总结+测试 | 2019.04.09|
    
 1. [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+
+   [Click here to see analysis](src/main/java/linklistcycle/analysis.md)
 
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
@@ -37,11 +49,15 @@
 
 1. [155. Min Stack](https://leetcode.com/problems/min-stack/)
 
+   [Click here to see analysis](src/main/java/minstack/anaysis.md)
+
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
    | 1 | 32min | 分析+实现+总结+测试 | 2019.04.09|
 
 1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+
+   [Click here to see analysis](src/main/java/reverselinkedlist/analysis.md)
 
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------|
@@ -49,11 +65,15 @@
 
 1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
 
+   [Click here to see analysis](src/main/java/implementqueueusingstacks/analysis.md)
+
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------|
    | 1 | 33min | 分析+实现+总结+测试 |2019.04.10|
    
 1. [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+
+   [Click here to see analysis](src/main/java/palindromelinkedlist/analysis.md)
 
    | 次数 | 时间 | 内容 | 日期 |
    | ------ | ------ | ------ | ------ |
@@ -63,6 +83,8 @@
 
 1. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
 
+   [Click here to see analysis](src/main/java/oddevenlinkedlist/analysis.md)
+
    | 次数 | 时间 | 内容 |日期
    | ------ | ------ | ------ | ------|
    | 1 | 60min | 分析+实现+总结+测试 |2019.04.10|
@@ -70,11 +92,15 @@
    
 1. [844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)
 
+   [Click here to see analysis](src/main/java/backspacestringcompare/analysis.md)
+
    | 次数 | 时间 | 内容 |日期
    | ------ | ------ | ------ | ------|
    | 1 | 60min | 分析+实现+总结+测试 |2019.04.10|
 
 1. [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+
+   [Click here to see analysis](src/main/java/middleoflinkedlist/analysis.md)
 
    | 次数 | 时间 | 内容 |日期
    | ------ | ------ | ------ | ------|
