@@ -16,6 +16,7 @@ A solution set is:
 ]
 ```
 ## 分析
+###  Version 1
 最暴力的方式为三层循环，时间复杂度O(n^3)，一定会超时。
 
 如果使用hashmap存储原数组，可以将最里面一层循环去掉（即选两个数，看第三个数是否存在与数组），时间复杂度变为O(n^2)。
@@ -78,8 +79,43 @@ A solution set is:
 例：
 ![21555479567_.pic_hd](https://ws1.sinaimg.cn/large/006tNc79ly1g25kse9kwaj30u0140npe.jpg)
 
+### Version 2(再度优化)
+    
+修改排序，直接从小到大排列，其余不变
+
+### Version 3(其他解法)
+
+```java
+public List<List<Integer>> threeSum(int[] nums) {
+    List<List<Integer>> res = new ArrayList<>();
+    Arrays.sort(nums);
+    for (int i = 0; i + 2 < nums.length; i++) {
+        if (i > 0 && nums[i] == nums[i - 1]) {              // skip same result
+            continue;
+        }
+        int j = i + 1, k = nums.length - 1;  
+        int target = -nums[i];
+        while (j < k) {
+            if (nums[j] + nums[k] == target) {
+                res.add(Arrays.asList(nums[i], nums[j], nums[k]));
+                j++;
+                k--;
+                while (j < k && nums[j] == nums[j - 1]) j++;  // skip same result
+                while (j < k && nums[k] == nums[k + 1]) k--;  // skip same result
+            } else if (nums[j] + nums[k] > target) {
+                k--;
+            } else {
+                j++;
+            }
+        }
+    }
+    return res;
+}
+```
+
 
 ## 实现
+- V1
 
 ```java
 class SortByAbsoluteValue implements Comparator<Integer> { 
@@ -115,7 +151,7 @@ public List<List<Integer>> threeSum(int[] nums) {
     int positiveIndex = 0;
     int negativeIndex = divider;
     if (map.get(0) != null && map.get(0) > 2) {
-        addToResults(results, 0, 0, 0);
+        results.add(Arrays.asList(cur, complement, posElem));
     }
     while (true) {
         if (positiveIndex > divider || negativeIndex >= length) {
@@ -157,17 +193,9 @@ private void find(List<List<Integer>> results,
             continue;
         }
         if (complement != cur || complementCount >= 2) {
-            addToResults(results, biggerElem, cur, complement);
+             results.add(Arrays.asList(cur, complement, posElem));
         }
     }
-}
-
-private void addToResults(List<List<Integer>> results, int e1, int e2, int e3) {
-    List<Integer> result = new LinkedList<>();
-    result.add(e2);
-    result.add(e1);
-    result.add(e3);
-    results.add(result);
 }
 
 private boolean isLessThanHalf(int cur, double halfOfBiggerElem) {
@@ -178,6 +206,79 @@ private boolean isLessThanHalf(int cur, double halfOfBiggerElem) {
 }
 
 ```
+- V2
+
+```java
+public List<List<Integer>> threeSum(int[] nums) {
+    List<List<Integer>> results = new LinkedList<>();
+    if (nums.length < 3) {
+        return results;
+    }
+
+    Arrays.sort(nums);
+
+    Map<Integer, Integer> map = new HashMap<>();
+    int divider = 0;
+    Integer count;
+    for (int i = 0; i < nums.length; i++) {
+        int cur = nums[i];
+        if (cur < 0) {
+            divider = i + 1;
+        }
+        count = map.get(cur);
+        map.put(cur, count == null ? 1 :count + 1);
+    }
+    int length = nums.length;
+    int positiveIndex = length - 1;
+    int negativeIndex = 0;
+    if (map.get(0) != null && map.get(0) > 2) {
+        results.add(Arrays.asList(0, 0, 0));
+    }
+    while (negativeIndex < divider && positiveIndex >= divider) {
+        int posElem = nums[positiveIndex];
+        int negElem = nums[negativeIndex];
+        int absNegElem = Math.abs(negElem);
+        if (posElem < absNegElem) {
+            for (int i = positiveIndex; i >= divider; i--) {
+                int cur = nums[i];
+                if (i < positiveIndex && cur == nums[i + 1]) {
+                    continue;
+                }
+                if (cur < absNegElem / 2.0) {
+                    break;
+                }
+                check(results, map, negElem, cur);
+            }
+            negativeIndex = negativeIndex + map.get(negElem);
+        } else {
+            for (int i = negativeIndex; i < divider; i++) {
+                int cur = nums[i];
+                if (i > 0 && cur == nums[i - 1]) {
+                    continue;
+                }
+                if (Math.abs(cur) < posElem / 2.0) {
+                    break;
+                }
+                check(results, map, posElem, cur);
+            }
+            positiveIndex = positiveIndex - map.get(posElem);
+        }
+    }
+    return results;
+}
+
+private void check(List<List<Integer>> results, Map<Integer, Integer> map, int posElem, int cur) {
+    int complement = 0 - cur - posElem;
+    Integer complementCount = map.get(complement);
+    if (complementCount != null) {
+        if (complement != cur || complementCount >= 2) {
+            results.add(Arrays.asList(cur, complement, posElem));
+        }
+    }
+}
+```
+
+- V3
 
 ## 总结
 
