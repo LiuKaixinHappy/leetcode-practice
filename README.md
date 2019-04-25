@@ -124,6 +124,40 @@
    | 1 | 180min | 实现（有bug）+测试 |2019.04.14|
    | 2 | 120min | 实现 |2019.04.15|
    | 2 | 100min | 分析+优化+回顾总结 |2019.04.17|
+
+1. [1029. Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)
+
+   | 次数 | 时间 | 内容 |日期
+   | ------ | ------ | ------ | ------|
+   | 1 | 180min | 实现+测试 |2019.04.21|
+   | 2 | 120min | 实现 |2019.04.22|
+   
+1. [650. 2 Keys Keyboard](https://leetcode.com/problems/2-keys-keyboard/)
+
+   | 次数 | 时间 | 内容 |日期
+   | ------ | ------ | ------ | ------|
+   | 1 | 180min | 实现+测试 |2019.04.22|
+   
+1. [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
+
+   | 次数 | 时间 | 内容 |日期
+   | ------ | ------ | ------ | ------|
+   | 1 | 180min | 实现+测试 |2019.04.23|
+   
+1. [606. Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)
+
+
+   | 次数 | 时间 | 内容 |日期
+   | ------ | ------ | ------ | ------|
+   | 1 | 180min | 实现+测试 |2019.04.24|
+   
+2. [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)
+
+
+   | 次数 | 时间 | 内容 |日期
+   | ------ | ------ | ------ | ------|
+   | 1 | 180min | 实现+测试 |2019.04.24|
+
 总结:
 1. 先想解决思路，不必考虑复杂度，也不必考虑数据结构；再看每一步是否有可优化的点，从数据结构与算法的角度考虑。
 1. 查找优化，想hash table/hash map，但是要注意空间复杂度的提升。
